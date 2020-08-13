@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="As a user, should be able to verify the deals page" skipped="0" tests="2" time="31.89" timestamp="2020-08-11 11:54:33"><testcase name="new login"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ADMIN', ip: '192.168.43.214', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_201'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.43.214', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_201'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.43.214', os.name: 'Windows 8', os.arch: 'x86', os.version: '6.2', java.version: '1.8.0_201'
+Driver info: driver.version: unknown&#13;
+pageObjects.DashboardPageObject.logoutApplication(DashboardPageObject.java:45)&#13;
+steps.DashboardSteps.LogOutTheApplication(DashboardSteps.java:27)&#13;
+stepDefinitions.DashBoardBDD.validate_Homepage_title(DashBoardBDD.java:27)&#13;
+✽.Logout from the application page(./src/test/resources/features/Login.feature:16)&#13;
+</system-err></testcase></testsuite>

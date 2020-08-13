@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="129.3258">
+<testcase classname="Background using login" name="Without examples" time="75.379662">
+<system-out><![CDATA[When user entering the username and password................................passed
+Then user enters the deals..................................................passed
+And Entering all the details in deals Page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Background using login" name="With examples" time="53.946138">
+<system-out><![CDATA[When user entering the username and password................................passed
+Then user enters the deals..................................................passed
+Given the list string lecture details are...................................passed
+]]></system-out>
+</testcase>
+</testsuite>
