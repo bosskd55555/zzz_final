@@ -1,12 +1,15 @@
 steps\LoginSteps.class
+steps\DashboardSteps.class
 pageObjects\DealsPageObject.class
 stepDefinitions\DealsPageBDD.class
-DataObjects\Deals_details.class
+stepDefinitions\DashBoardBDD.class
+stepDefinitions\Hooks.class
 utilities\DriverInitialization.class
 utilities\DefaultPageObject.class
 steps\DealsSteps.class
 stepDefinitions\LoginPageBDD.class
 utilities\TestBase.class
+pageObjects\DashboardPageObject.class
 utilities\TestUtil.class
 runner\TestRunner.class
 pageObjects\LoginPageObject.class

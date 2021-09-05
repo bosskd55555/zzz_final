@@ -29,11 +29,11 @@ public class DashboardPageObject  extends DefaultPageObject{
     
     public void deals_board_click() throws InterruptedException
     {
-    	Thread.sleep(3000);
+    	//Thread.sleep(3000);
     	logger.info("before deals link click");
     	Deals.click();
     	logger.info("after deals link click");
-    	Thread.sleep(3000);
+    	//Thread.sleep(3000);
     }
     
     
@@ -41,11 +41,11 @@ public class DashboardPageObject  extends DefaultPageObject{
     
     public void logoutApplication () throws InterruptedException{
     	
-    	Thread.sleep(3000);
+    	//Thread.sleep(3000);
     	
     	Logout_link.click();
     	
-    	Thread.sleep(2000);
+    	//Thread.sleep(2000);
     	Logout.click();
     	
     	

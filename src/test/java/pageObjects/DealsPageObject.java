@@ -1,8 +1,10 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
@@ -43,11 +45,11 @@ public class DealsPageObject extends DefaultPageObject {
 
 		 public void Enter_the_deals_page() throws Exception{
 
-			 Thread.sleep(3000);
+			// Thread.sleep(3000);
 		      //prop=loadThePropertiesFile();
 		      
 		     
-		      Thread.sleep(3500);
+		      //Thread.sleep(3500);
 		     
 		        
 		      
@@ -59,9 +61,16 @@ public class DealsPageObject extends DefaultPageObject {
 		      //withTimeoutOf(10,TimeUnit.SECONDS).waitFor(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".mjHome")));   
 		    	 // System.out.println("webelement is"+abc); 
 		      
-		      withTimeoutOf(Duration.ofSeconds(70)).find(By.xpath("//a[@href='/deals/new']"))
-              .click();
+		 //     withTimeoutOf(Duration.ofSeconds(70)).find(By.xpath("//a[@href='/deals/new']"))
+           //   .click();
+
+		     
+		      //waitForCondition().withTimeout(Duration.ofSeconds(10)).pollingEvery(5, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(new_button));
 		      
+		 
+		    		 
+		      new_button.click();
+		    		 
 		  //    withTimeoutOf(Duration.ofSeconds(70)).find(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[2]/div/button[1]"))
             //  .click(); 
 		      
@@ -73,7 +82,7 @@ public class DealsPageObject extends DefaultPageObject {
 		      
 		        logger.info("after new button clicked");
 		        
-		        Thread.sleep(3500);
+		       // Thread.sleep(3500);
 		      
 		        
 		       // new_button.waitUntilEnabled();
@@ -84,13 +93,13 @@ public class DealsPageObject extends DefaultPageObject {
 		        
 		     //  WebElement test= getDriver().findElement(By.xpath("//*[@id='dashboard-toolbar']/div[2]/div/a[3]/button"));
 		       
-		       Thread.sleep(3500);
+		     //  Thread.sleep(3500);
 		       
 		      //test.click();
 		        
 		        logger.info(" after new button clicked");
 		        
-		        Thread.sleep(1500);
+		       // Thread.sleep(1500);
 		    }
 	 
 	 public void Enter_the_deals_details() throws Exception{
@@ -100,6 +109,10 @@ public class DealsPageObject extends DefaultPageObject {
 		 
 	     
 	        deals_title.sendKeys(prop.getProperty("title")); 
+	        
+	      //  waitForCondition().withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5)).until
+	        
+	       // waitForCondition().withTimeout(Duration.ofSeconds(10)).pollingEvery(5, TimeUnit.SECONDS).until(ExpectedConditions.elementToBeClickable(By.name("amount")));
 	        deals_amount.sendKeys(prop.getProperty("amount"));
 	        deals_probability.sendKeys(prop.getProperty("probability"));
 	        deals_commision.sendKeys(prop.getProperty("Commission"));
@@ -115,6 +128,7 @@ public class DealsPageObject extends DefaultPageObject {
 	     
 	        deals_title.sendKeys(title); 
 	        deals_amount.sendKeys(amount);
+	        //withTimeoutOf(Duration.ofSeconds(10)).find(By.name("amount")).sendKeys(amount);
 	        deals_probability.sendKeys(probability);
 	        deals_commision.sendKeys(commision);
 	        logger.info("Deals values entered");

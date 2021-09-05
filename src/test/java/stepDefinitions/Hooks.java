@@ -16,18 +16,21 @@ public class Hooks extends PageObject{
 	
 	 public static Logger logger;
 	
-	@Before(order=1)
-    public void beforeScenario() throws InterruptedException{
-		
-		logger.info("Enters the method-open URL");
-        //prop=loadThePropertiesFile();
-        Thread.sleep(4000);
-        getDriver().get(DefaultPageObject.prop.getProperty("baseURL"));
-        logger.info("URL opened");
-        //getDriver().manage().timeouts().implicitlyWait(20, SECONDS);
-        getDriver().manage().window().maximize();
-        Thread.sleep(500);
-    }	
+//	@Before(order=1)
+//    public void beforeScenario() throws InterruptedException{
+//		
+//		logger.info("Enters the method-open URL");
+//        //prop=loadThePropertiesFile();
+//        Thread.sleep(4000);
+//        open();
+//        //getDriver().get(DefaultPageObject.prop.getProperty("baseURL"));
+//        logger.info("URL opened");
+//        //getDriver().manage().timeouts().implicitlyWait(20, SECONDS);
+//        getDriver().manage().window().maximize();
+//        Thread.sleep(9000);
+//    }
+	
+	
 	@Before(order=0)
     public void beforeScenarioStart() throws IOException{
 		   
@@ -38,7 +41,7 @@ public class Hooks extends PageObject{
     }	
 	
 	
-	@After(order=0)
+/*	@After(order=0)
     public void afterScenarioFinish() throws InterruptedException{
       
 		Thread.sleep(5000);
@@ -55,7 +58,7 @@ public class Hooks extends PageObject{
 	    	Thread.sleep(5000);
 		
     }	
-	
+	*/
 
 
 

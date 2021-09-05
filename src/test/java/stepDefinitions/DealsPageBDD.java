@@ -44,13 +44,13 @@ public class DealsPageBDD  {
 
 	
 	@Given("the list string lecture details are")
-	public void theListStringLectureDetailsAre(List<List<String>> lectures) throws Exception {
+	public void theListStringLectureDetailsAre(List<List<String>> test) throws Exception {
 		System.out.println("");
-		System.out.println(lectures);
-		String title=lectures.get(1).get(0);
-		String amount=lectures.get(1).get(1);
-		String probability=lectures.get(1).get(2);
-		String commision=lectures.get(1).get(3);
+		System.out.println(test);
+		String title=test.get(1).get(0);
+		String amount=test.get(1).get(1);
+		String probability=test.get(1).get(2);
+		String commision=test.get(1).get(3);
 		
 		
 		

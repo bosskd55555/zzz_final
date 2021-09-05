@@ -11,16 +11,19 @@ import net.thucydides.core.pages.PageObject;
 
 public class DefaultPageObject extends PageObject {
 
-    public static Logger logger=LogManager.getLogger();
-    //public static Properties prop = new Properties();
+    public static Logger logger=LogManager.getLogger(DefaultPageObject.class);
     public static Properties prop;
+    
 
     public DefaultPageObject() {
+    	
+    	//setImplicitTimeout(10,SECONDS);
 
         prop = new Properties();
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.properties");
         try {
 			prop.load(inputStream);
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

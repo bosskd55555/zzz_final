@@ -104,7 +104,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Entering deals feature","type":"feature","href":"daaec4dd7caedce51e6e239cbdc43b757020296d9f332e5d1bacb9bc5e01ddda.html","nodes":[],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e2 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Entering deals feature","type":"feature","href":"daaec4dd7caedce51e6e239cbdc43b757020296d9f332e5d1bacb9bc5e01ddda.html","nodes":[],"selectable":false,"tags":["",""]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -170,7 +170,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-08-2020 13:48</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -227,20 +227,11 @@
                                             <div id="toc">
                                                 <table class="table" id="toc-table">
                                                         <tr>
-                                                            <td style="width:99%;" class="toc-title"><a href="#352c56cdb135343af08556c75cf092977a91cc2d1143a112c9bfcdd9400dde65">Without examples</a>
-
-
-                                                            </td>
-                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
-                                                               
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
                                                             <td style="width:99%;" class="toc-title"><a href="#0044eb94fa0ec38465cf7e6d2c7290c0f73ecae878aa293f0fd276f00e01dfd7">With examples</a>
 
 
                                                             </td>
-                                                            <td style="width:1%;"><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                            <td style="width:1%;">
                                                                
                                                             </td>
                                                         </tr>
@@ -251,37 +242,8 @@
                                             <h3>Scenario details</h3>
 
 
-                                                <div class="scenario-docs card" id="352c56cdb135343af08556c75cf092977a91cc2d1143a112c9bfcdd9400dde65">
-                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
-                                                        <div>
-                                                            <span class="scenario-heading">
-                                                                Without examples
-                                                            </span>
-                                                            <span class="scenario-result-icon">
-                                                                
-
-                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
-                                                            </span>
-                                                        </div>
-                                                        <div class="scenario-report-badges">
-                                                                <span class="scenario-report-badge" style="float:right;"><a href='6eee00ee1c50aa6f60a788f3eef8fdfd53c720c896ee1494c8be29903596c85b.html' class='badge more-details'>Test Results</a></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="scenario-docs card-body">
-                                                            <p>Given As a user should be able to launch the application</p>
-                                                            <p>When user entering the username and password</p>
-                                                            <p>Then user enters the deals</p>
-                                                            <p>And Entering all the details in deals Page</p>
-                                                            <p>Then Logout from the application page</p>
-                                                        <div class="examples">
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
                                                 <div class="scenario-docs card" id="0044eb94fa0ec38465cf7e6d2c7290c0f73ecae878aa293f0fd276f00e01dfd7">
-                                                    <div class="scenario-docs card-header success" style="min-height:1.5em;">
+                                                    <div class="scenario-docs card-header undefined" style="min-height:1.5em;">
                                                         <div>
                                                             <span class="scenario-heading">
                                                                 With examples
@@ -289,11 +251,9 @@
                                                             <span class="scenario-result-icon">
                                                                 
 
-                                                                    <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i>
+                                                                    <i class="fas fa-pause"
+                                                                       title="No test has been implemented yet"></i>
                                                             </span>
-                                                        </div>
-                                                        <div class="scenario-report-badges">
-                                                                <span class="scenario-report-badge" style="float:right;"><a href='e4117f81d3f7c5830ae5858d20ca2ee16741b3167396c5db92daf3fdf4017869.html' class='badge more-details'>Test Results</a></span>
                                                         </div>
                                                     </div>
                                                     <div class="scenario-docs card-body">
@@ -305,11 +265,10 @@
 <tr><th>title</th><th>amount</th><th>probability</th><th>commision</th></tr>
 </thead>
 <tbody>
-<tr><td>Doe</td><td>30</td><td>Associate</td><td>new</td></tr>
+<tr><td>file</td><td>30</td><td>Associate</td><td>new</td></tr>
 </tbody>
 </table>
 </p>
-                                                            <p>Then Logout from the application page</p>
                                                         <div class="examples">
                                                         </div>
 
@@ -323,41 +282,7 @@
                             <div id="results" class="tab-pane fade">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-sm-4">
-
-                                            <div style="width:300px;" class="chart-container automated-and-manual-results">
-                                                <div class="ct-chart ct-square"></div>
-                                            </div>
-                                            <script>
-
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
-                                                // Our series array that contains series objects or in this case series data arrays
-
-                                                var series = [{meta: 'Passing tests (automated)', value: 2}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
-
-                                                // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                                                // as you saw in the previous example
-                                                var options = {
-                                                    width: 350,
-                                                    height: 300
-                                                };
-
-                                                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                                                    new Chartist.Pie('.ct-chart', {
-                                                        series: series,
-                                                        labels: labels,
-                                                    }, {
-                                                        donut: true,
-                                                        donutWidth: 60,
-                                                        donutSolid: true,
-                                                        startAngle: 270,
-                                                        showLabel: true
-                                                    }, options);
-                                                });
-
-                                            </script>
-                                        </div>
-                                        <div class="col-sm-8">
+                                        <div class="col-sm-12">
 
                                         <table class="table">
                                             <thead>
@@ -370,12 +295,11 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count">
-                                                                        <a href="b04ccd6d63246a853162605779ce71ec616f9083394803f68aec9681046400e3.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                     </td>
-                                                <td class="automated-stats">2</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -428,7 +352,7 @@
                                             </tr>
                                             <tr class="summary-stats">
                                                 <td class="aggregate-result-count">Total</td>
-                                                <td class="automated-stats">2</td>
+                                                <td class="automated-stats">0</td>
                                                 <td class="automated-stats"></td>
                                             </tr>
                                             </tbody>
@@ -450,11 +374,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td> 1m 14s</td>
-                                                        <td>54s</td>
-                                                        <td>20s</td>
-                                                        <td>54s</td>
-                                                        <td>37s</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
+                                                        <td>0ms</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -466,43 +390,7 @@
                                             <div class="col-sm-12">
                                                 <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                            <table class="scenario-result-table table" id="scenario-results">
-                                                <thead>
-                                                <tr>
-                                                    <th class="test-name-column">Scenario</th>
-                                                    <th>Steps</th>
-                                                    <th>Start Time</th>
-                                                    <th>Duration</th>
-                                                    <th>Result</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr class="scenario-result SUCCESS">
-                                                    <td>
-                                                            <a href="6eee00ee1c50aa6f60a788f3eef8fdfd53c720c896ee1494c8be29903596c85b.html">Without examples</a>
-                                                    </td>
-                                                    <td>5</td>
-                                                    <td>13:48:00</td>
-                                                    <td>00:54</td>
-                                                    <td>
-                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
-                                                                style="display:none">SUCCESS</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="scenario-result SUCCESS">
-                                                    <td>
-                                                            <a href="e4117f81d3f7c5830ae5858d20ca2ee16741b3167396c5db92daf3fdf4017869.html">With examples</a>
-                                                    </td>
-                                                    <td>4</td>
-                                                    <td>13:48:54</td>
-                                                    <td>00:20</td>
-                                                    <td>
-                                                            <i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i> <span
-                                                                style="display:none">SUCCESS</span>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                                            No automated tests were executed
 
                                             </div>
                                         </div>

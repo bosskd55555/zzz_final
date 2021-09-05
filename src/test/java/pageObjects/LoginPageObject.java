@@ -14,7 +14,7 @@ public class LoginPageObject extends DefaultPageObject {
 
     TestUtil til = new TestUtil();
 
-    @FindBy(xpath = "//input[@name='email']")
+ /*   @FindBy(xpath = "//input[@name='email']")
     private WebElementFacade txtUsername;
 
     @FindBy(xpath = "//*[@name='password']")
@@ -24,7 +24,7 @@ public class LoginPageObject extends DefaultPageObject {
     private WebElementFacade btnLogin;
 
     @FindBy(xpath = "/html/head/title")
-    private WebElementFacade TitleName;
+    private WebElementFacade TitleName;*/
     
   
 
@@ -40,13 +40,15 @@ public class LoginPageObject extends DefaultPageObject {
         Thread.sleep(500);
     }
 
-    public void enteringCredentials() {
+/*    public void enteringCredentials() {
 
        // withTimeoutOf(30, SECONDS).waitFor(txtUsername);
         
-       
+       System.out.println("implicit timeout is"+getImplicitWaitTimeout());
+       System.out.println("explicit timeout is"+getWaitForTimeout());
+    	
         txtUsername.sendKeys("kannan21109444@gmail.com");
-        txtPassword.sendKeys("Aswath555.");
+       // txtPassword.sendKeys("Aswath555.");
         btnLogin.waitUntilVisible();
         btnLogin.click();
 
@@ -63,9 +65,10 @@ public class LoginPageObject extends DefaultPageObject {
 		
 		txtUsername.sendKeys(string);
         txtPassword.sendKeys(string2);
+       
 		
 	}
-
+*/
 
 
 }

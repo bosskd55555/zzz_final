@@ -10,6 +10,8 @@ public class LoginPageBDD {
     @Steps
     LoginSteps LoginSteps;
 
+    
+    
     @Given("^As a user should be able to launch the application$")
     public void user_opens_the_URL() throws Exception {
 
@@ -17,6 +19,7 @@ public class LoginPageBDD {
 
     }
 
+  /* // @Title("user name and p.w")
     @When("user entering the username and password")
     public void user_enters_username_and_password() throws Exception {
 
@@ -28,5 +31,5 @@ public class LoginPageBDD {
         
     	LoginSteps.webtable(string,string2);
     }
-
+*/
 }

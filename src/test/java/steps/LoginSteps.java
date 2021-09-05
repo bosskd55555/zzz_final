@@ -14,7 +14,7 @@ public class LoginSteps extends ScenarioSteps {
         LoginPageObject.LaunchTheHomeUrl();
     }
 
-    @Step
+/*    @Step
     public void enteringTheCredentials() throws Exception{
 
         LoginPageObject.enteringCredentials();
@@ -24,7 +24,7 @@ public class LoginSteps extends ScenarioSteps {
 		
 		LoginPageObject.logindetail(string,string2);
 		
-	}
+	}*/
 
   
 }
